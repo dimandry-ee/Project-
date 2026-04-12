@@ -9,4 +9,5 @@ public:
     triangle(float a, float b, float c);
     void S() override;
     void P() override;
+    void is() override;
 }

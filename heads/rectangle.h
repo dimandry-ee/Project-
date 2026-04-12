@@ -8,4 +8,5 @@ public:
     rectangle(float a, float b);
     void S() override;
     void P() override;
+    void is() override;
 }

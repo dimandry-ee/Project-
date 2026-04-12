@@ -3,16 +3,31 @@
 using namespace std;
 
 long long float pi = 3,1415926;
+bool flag = 0;
+
 circle::circle(float r){
     this-> r = r;
 }
 
-void circle:: S(){
-    float s = pi * r * r;
-    std::cout << s << endl;
+void circle::is(){
+    if(r > 0){
+        flag = 1;
+    }
+    else{
+        cout << "the circle doesnt exsist" << endl;
+    }
+}
+
+void circle::S(){
+    if(flag == 1){
+        float s = pi * r * r;
+        std::cout << s << endl;
+    }   
 }
 
 void circle::P(){
-    float p = pi * 2 * r;
-    std::cout << p << endl;
+    if(flag == 1){
+        float p = pi * 2 * r;
+        std::cout << p << endl;
+    }
 }

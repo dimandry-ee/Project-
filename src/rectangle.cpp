@@ -6,13 +6,27 @@ rectangle::rectangle(float a, float b){
     this-> a = a;
     this-> b = b;
 }
+bool flag = 0;
 
-void rectangle:: S(){
-    float s = a * b;
-    std::cout << s << endl;
+void rectangle::is(){
+    if(a > 0 && b > 0){
+        flag = 1;
+    }
+    else{
+        cout << "the rectangle doesnt exsist" << endl;
+    }
+}
+
+void rectangle::S(){
+    if(flag == 1){
+        float s = a * b;
+        std::cout << s << endl;
+    }   
 }
 
 void rectangle::P(){
-    float p = (2 * a) + (2 * b);
-    std::cout << p << endl;
+    if(flag == 1){
+        float p = (2 * a) + (2 * b);
+        std::cout << p << endl;
+    }
 }
