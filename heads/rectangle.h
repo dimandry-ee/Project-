@@ -1,10 +1,11 @@
 #pragma once
 #include "IFigure2D.h"
 
-class circle: IFigure2D{
-    float r;
+class rectangle: IFigure2D{
+    float a;
+    float b;
 public:
-    circle(float r);
+    rectangle(float a, float b);
     void S() override;
     void P() override;
 }
