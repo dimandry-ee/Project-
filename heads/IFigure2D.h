@@ -5,6 +5,6 @@ using namespace std;
 
 class IFigure2D{
 public:
-  virtual void area() = 0;
-  virtual void perimeter() = 0;
+  virtual void S() = 0;
+  virtual void P() = 0;
 };
