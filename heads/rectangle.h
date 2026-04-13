@@ -1,7 +1,7 @@
 #pragma once
 #include "IFigure2D.h"
 
-class rectangle: IFigure2D{
+class rectangle: public IFigure2D{
     bool flag = 0;
     float a;
     float b;

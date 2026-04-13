@@ -1,7 +1,7 @@
 #pragma once
 #include "IFigure2D.h"
 
-class polygon: IFigure2D{
+class polygon: public IFigure2D{
     float pi = 3.1415926;
     bool flag = 0;
     float a;
