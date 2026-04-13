@@ -12,4 +12,4 @@ public:
     void S() override;
     void P() override;
     void is() override;
-}
+};
