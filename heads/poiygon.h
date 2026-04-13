@@ -3,10 +3,9 @@
 
 class polygon: IFigure2D{
     float a;
-    float r;
     int n;
 public:
-    polygon(float a, float r, int n);
+    polygon(float a, int n);
     void S() override;
     void P() override;
     void is() override;

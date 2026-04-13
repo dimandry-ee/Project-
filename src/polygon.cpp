@@ -1,16 +1,18 @@
 #include "polygon.h"
 #include <iostream>;
+#include <cmath>
 using namespace std;
 
-polygon::polygon(float a, float r, int n){
+polygon::polygon(float a, int n){
     this-> a = a;
-    this-> r = r;
     this-> n = n;
 }
 bool flag = 0;
+float pi = 3,1415926;
+float r = a * sinf(pi / n) / 2;
 
 void polygon::is(){
-    if(a > 0 && r > 0 && n > 0){
+    if(a > 0 && n > 0){
         flag = 1;
     }
     else{
