@@ -1,6 +1,8 @@
 #pragma once
 #include<iostream>
 
+using namespace std;
+
 class IFigure3D{
 public:
     virtual void V() = 0;
