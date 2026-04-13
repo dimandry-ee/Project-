@@ -8,8 +8,7 @@ triangle::triangle(float a, float b, float c){
     this-> b = b;
     this-> c = c;
 }
-float polp = (a + b + c) / 2;
-bool flag = 0;
+
 
 void triangle::is(){
     if ( (a < (b + c) && b < (a + c) && c < (a + b)) && (a > 0 && b > 0 && c > 0) ){
@@ -22,7 +21,8 @@ void triangle::is(){
 
 void triangle::S(){
     if(flag == 1){ 
-        float s = pow(polp * (polp - a) * (polp - b) * (polp - c), 1.0, 2.0);
+        float polp = (a + b + c) / 2;
+        float s = pow(polp * (polp - a) * (polp - b) * (polp - c), 0.5);
         std::cout << s << endl;  
     }
 }

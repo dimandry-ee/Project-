@@ -7,9 +7,8 @@ polygon::polygon(float a, int n){
     this-> a = a;
     this-> n = n;
 }
-bool flag = 0;
-float pi = 3,1415926;
-float r = a * sinf(pi / n) / 2;
+
+
 
 void polygon::is(){
     if(a > 0 && n > 0){
@@ -22,6 +21,7 @@ void polygon::is(){
 
 void polygon::S(){
     if(flag == 1){
+        float r = a * sinf(pi / n) / 2;
         float s = a * n * r / 2;
         std::cout << s << endl;
     }   

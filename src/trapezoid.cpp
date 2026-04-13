@@ -9,7 +9,6 @@ trapezoid::trapezoid(float a, float b, float c, float d){
     this-> c = c;
     this-> d = d;
 }
-bool flag = 0;
 
 void trapezoid::is(){
     if(a > 0 && b > 0 && c > 0){

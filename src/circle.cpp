@@ -2,8 +2,6 @@
 #include <iostream>;
 using namespace std;
 
-float pi = 3,1415926;
-bool flag = 0;
 
 circle::circle(float r){
     this-> r = r;

@@ -6,7 +6,6 @@ rectangle::rectangle(float a, float b){
     this-> a = a;
     this-> b = b;
 }
-bool flag = 0;
 
 void rectangle::is(){
     if(a > 0 && b > 0){
