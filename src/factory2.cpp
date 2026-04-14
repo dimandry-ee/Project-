@@ -1,6 +1,6 @@
 #include"factory2.h"
 
-std::unique_ptr<IFigure2D> Factory::create(figure2 a){
+std::unique_ptr<IFigure2D> Factory2::create(figure2 a){
      switch(a){
             case figure2::cir:
                 return make_unique<circle>();
