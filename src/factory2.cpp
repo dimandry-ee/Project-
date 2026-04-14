@@ -1,4 +1,4 @@
-#include"factory.h"
+#include"factory2.h"
 
 std::unique_ptr<IFigure2D> Factory::create(figure2 a){
      switch(a){
