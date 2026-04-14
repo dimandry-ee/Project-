@@ -1,13 +1,12 @@
 #pragma once
 #include <memory>
 #include <iostream>
-#include "cube.cpp"
-#include "sphere.cpp"
+
 using namespace std;
 
-enum class figure3 {sher, cube};
+enum class figure3 {spher, cube};
 
-class Factory2{
+class Factory3{
 public:
     std::unique_ptr<IFigure3D> create(figure3 a);
 };

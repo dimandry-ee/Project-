@@ -1,11 +1,11 @@
 #pragma once
 #include <memory>
 #include <iostream>
-#include "circle.cpp"
-#include "triangle.cpp"
-#include "trapezoid.cpp"
-#include "polygon.cpp"
-#include "rectangle.cpp"
+#include "circle.h"
+#include "triangle.h"
+#include "trapezoid.h"
+#include "polygon.h"
+#include "rectangle.h"
 // #include "sphere.cpp"
 // #include "cube.cpp"
 using namespace std;

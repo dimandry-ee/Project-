@@ -4,8 +4,9 @@
 using namespace std;
 
 int main(){
-    factory2 f2;
-    factory3 f3;
-    auto c = f3.create(figure3 1)(5);
+    Factory2 f2;
+    Factory3 f3;
+    auto c = f3.create(figure3::spher);
+    c(5);
     c.V();
 }
